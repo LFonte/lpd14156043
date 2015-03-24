@@ -12,7 +12,8 @@ import sys
 
 
 def do_Portscan():
-    print 'Portscan'
+    import portscan
+    portscan.portscan()
     pass
 
 def show_ActiveConnections():
