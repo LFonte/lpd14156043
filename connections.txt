@@ -1,0 +1,6 @@
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State      
+tcp        0     29 localhost:33661         localhost:37276         ESTABLISHED
+tcp        0      0 localhost:33661         localhost:37275         TIME_WAIT  
+tcp        0      0 localhost:37276         localhost:33661         ESTABLISHED
+tcp6       1      0 ip6-localhost:57526     ip6-localhost:ipp       CLOSE_WAIT 

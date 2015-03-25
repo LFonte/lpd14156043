@@ -17,7 +17,8 @@ def do_Portscan():
     pass
 
 def show_ActiveConnections():
-    print 'Active Connections'
+    import connections
+    connections.presentConnections()
     pass
 
 def do_FirewallLogProcessing():
