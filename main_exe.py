@@ -22,7 +22,8 @@ def show_ActiveConnections():
     pass
 
 def do_FirewallLogProcessing():
-    print 'Firewall log processing'
+    import process_firewall_log
+    process_firewall_log.showLogs()
     pass
 
 def do_exitProgram():
@@ -33,7 +34,6 @@ if __name__ == "__main__":
 
     app_stat = True
     
-
     while app_stat:
         print '\n---------------------------------------------------'
         print '---------- Network Security Application -----------'
@@ -56,8 +56,3 @@ if __name__ == "__main__":
         pass
     pass
 
-
-
-
-
-    

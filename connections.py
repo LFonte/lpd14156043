@@ -1,8 +1,9 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
+#https://docs.python.org/3.3/library/os.html#os.system
 
-import os #https://docs.python.org/3.3/library/os.html#os.system
+import os
 
 """
 Connections File
