@@ -3,14 +3,14 @@
 
 #https://docs.python.org/3.3/library/os.html#os.system
 
+import os
+
 """
 Connections File
 
 @author Luis Fonte
 @date 20150323
 """
-
-import os
 
 def presentConnections():
     """
@@ -77,4 +77,36 @@ def processConnections():
     connections_array.pop(0) #remove first two lines from array
     connections_array.pop(0)
     return connections_array
+
+
+def secondOptions():
+    user_choice = int(raw_input("\n--OPTIONS--\n1 - Make graph \n ... \n 0 - Back to Menu \n\n Choose option number: "))
+
+    menu_2ndOptions = {0 : backToMenu,
+                        1 : makeGraph}
+    print '\n'
+    pass
+
+def backtoMenu():
+    #break
+    pass
+
+def makeGraph():
+    print "=================================="
+    print "| #0 Protocolo                   |"
+    print "| #1 Local e Utilizador          |"
+    print "| #2 Porta                       |"
+    print "| #3 Nome Conexao                |"
+    print "| #4 Protocolo camada superior   |"
+    print "| #5 Estado da conexao           |"
+    print "=================================="
+    
+    num = raw_input("Graph to generate?(number): ")
+    title = raw_input("Graph title: ")
+    label = raw_input("Graph legend: ")
+    import plotgraf
+    con = connect.getConnections()
+    plotgraf.makeGraf(con, int(num), title, label)
+    pass
+
 

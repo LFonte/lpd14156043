@@ -1,5 +1,6 @@
 # -*- coding:utf-8 -*-
 
+
 #https://pypi.python.org/pypi/pygeoip/
 #https://wiki.ubuntu.com/UncomplicatedFirewall
 #python-ufw 0.34
@@ -14,7 +15,9 @@ Firewall log processing File
 @date 20150325
 """
 
+
 LOG_FILE = "ufw.log"
+
 
 def showLogs():
     """
@@ -26,7 +29,7 @@ def showLogs():
     for log in logsLocation: #text format
         print str(log[0])+"\t"+str(log[1])+"\t"+str(log[2])+"\t"+str(log[3])+"\t"+str(log[4])+"\t"+str(log[5])+"\t"+str(log[6])+"\t"+str(log[7])+"\t"+str(log[8])+"\t"+str(log[9])
         pass
-    raw_input("Click Enter to continue...")
+    raw_input("Press Enter to continue...")
     pass
 
 def getLogsLocation():
@@ -80,16 +83,3 @@ def getLogs():
     return logsArray
     pass
 
-def log_map(info):
-    """
-    Method that returns aray with longitude and altitude
-
-    @info - array that contains log information
-    """
-    log_m = []
-    for x in info:
-        tree_info = [str(x[11]),str(x[10]),str(x[9])+"<br>"+ str(x[3])+"<br>"+str(x[6])]
-        if not tree_info in log_m:
-            log_m.append(tree_info)
-    return log_m
-    pass

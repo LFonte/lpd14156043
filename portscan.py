@@ -1,8 +1,4 @@
-#!/usr/bin/python
 # -*- coding: utf-8 -*-
-
-
-import nmap
 
 """
 Portscan File
@@ -11,10 +7,12 @@ Portscan File
 @date 20150323
 """
 
-
+import nmap
 
 def portscan():
-
+    """
+    Does the portscan to a target IP and and ethernet ports defined by user
+    """
     addresses = str(raw_input('IP to scan: '))
     ports = str(raw_input('Ports to scan: '))
     
@@ -37,10 +35,4 @@ def portscan():
         pass
 
     raw_input("...\nPress Enter to continue...")
-    pass
-    
-                
-
-
-
-            
+    pass      
