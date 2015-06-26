@@ -1,0 +1,7 @@
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State      
+tcp        0      0 192.168.139.136:45648   onslaught.tornode:https ESTABLISHED
+tcp        0      0 192.168.139.136:51404   tor.kumbier.it:https    ESTABLISHED
+tcp        0      0 localhost:38467         localhost:43085         ESTABLISHED
+tcp        0     30 localhost:43085         localhost:38467         ESTABLISHED
+tcp6       1      0 ip6-localhost:35293     ip6-localhost:ipp       CLOSE_WAIT 

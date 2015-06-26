@@ -1,0 +1,84 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module generate_maps</title>
+<meta charset="utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>generate_maps</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/home/user/Desktop/lpd14156043/src/generate_maps.py">/home/user/Desktop/lpd14156043/src/generate_maps.py</a></font></td></tr></table>
+    <p><tt>Generates&nbsp;graph&nbsp;with&nbsp;log&nbsp;locations.<br>
+&nbsp;<br>
+@author&nbsp;Luis&nbsp;Fonte<br>
+@date&nbsp;2015060</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="generate_maps.html#Icon">Icon</a>
+</font></dt><dt><font face="helvetica, arial"><a href="generate_maps.html#Map">Map</a>
+</font></dt><dt><font face="helvetica, arial"><a href="generate_maps.html#PyMap">PyMap</a>
+</font></dt></dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Icon">class <strong>Icon</strong></a></font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Get/make&nbsp;marker&nbsp;icons&nbsp;at&nbsp;<a href="http://mapki.com/index.php?title=Icon_Image_Sets">http://mapki.com/index.php?title=Icon_Image_Sets</a><br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Icon-__init__"><strong>__init__</strong></a>(self, id<font color="#909090">='icon'</font>)</dt></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Map">class <strong>Map</strong></a></font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Map-__init__"><strong>__init__</strong></a>(self, id<font color="#909090">='map'</font>, pointlist<font color="#909090">=None</font>)</dt></dl>
+
+<dl><dt><a name="Map-__str__"><strong>__str__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Map-setpoint"><strong>setpoint</strong></a>(self, point)</dt><dd><tt>Add&nbsp;a&nbsp;point&nbsp;(lat,long,html,icon)</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="PyMap">class <strong>PyMap</strong></a></font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Python&nbsp;wrapper&nbsp;class&nbsp;for&nbsp;Google&nbsp;Maps&nbsp;API.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="PyMap-__init__"><strong>__init__</strong></a>(self, key<font color="#909090">=None</font>, maplist<font color="#909090">=None</font>, iconlist<font color="#909090">=None</font>)</dt><dd><tt>Default&nbsp;values</tt></dd></dl>
+
+<dl><dt><a name="PyMap-__str__"><strong>__str__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="PyMap-addicon"><strong>addicon</strong></a>(self, icon)</dt></dl>
+
+<dl><dt><a name="PyMap-pymapjs"><strong>pymapjs</strong></a>(self)</dt><dd><tt>Returns&nbsp;complete&nbsp;javacript&nbsp;for&nbsp;rendering&nbsp;map</tt></dd></dl>
+
+<dl><dt><a name="PyMap-showhtml"><strong>showhtml</strong></a>(self)</dt><dd><tt>returns&nbsp;a&nbsp;complete&nbsp;html&nbsp;page&nbsp;with&nbsp;a&nbsp;map</tt></dd></dl>
+
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-createMap"><strong>createMap</strong></a>(info)</dt><dd><tt>Method&nbsp;generates&nbsp;map&nbsp;with&nbsp;location&nbsp;from&nbsp;ips&nbsp;as&nbsp;parameter.</tt></dd></dl>
+</td></tr></table>
+</body></html>

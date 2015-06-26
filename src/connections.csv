@@ -1,0 +1,6 @@
+tcp,192.168.139.134,55670,onslaught.tornode,https,ESTABLISHED
+tcp,192.168.139.134,53740,hosted-by.codewav,https,ESTABLISHED
+tcp,localhost,47991,localhost,56426,ESTABLISHED
+tcp,localhost,56426,localhost,47991,ESTABLISHED
+tcp,localhost,56426,localhost,47990,TIME_WAIT
+tcp6,ip6-localhost,49373,ip6-localhost,ipp,CLOSE_WAIT
