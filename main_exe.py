@@ -210,24 +210,50 @@ def do_nslookup():
 
 def do_whois():
     """
-    
+    Do Whois search aboout ip address registry
+
+    var ip_to_search - stores ip given by user
+    var obj - ip whois function with ip to search
     """
     import ipwhois # from https://pypi.python.org/pypi/ipwhois
     from ipwhois import IPWhois
+    import pprint #https://docs.python.org/2/library/pprint.html
     ip_to_search = str(raw_input("IP address to search for: "))
+    print "\n"
     obj = IPWhois(ip_to_search)
-   # whois_list = ""
     try:
-        print obj.lookup_rws()
+        pprint.pprint(obj.lookup_rws())
+    except:
+        print "\nError."
+        raw_input("\nClick Enter to continue...")
+        pass
+    raw_input("\nClick Enter to continue...")
+    pass
+
+def do_reverseLookup():
+    """
+    Gets hostname by IP address
+
+    var address - ip address to searchS
+    """
+    import socket
+    
+    try:
+        print "-Reverse Lookup-\n"
+        address = raw_input("Enter the IP address: ")
+        print "\n"
+        print socket.gethostbyaddr(address)
+        print "\n"
         pass
     except:
         print "\nError."
         raw_input("\nClick Enter to continue...")
+        pass
     pass
 
 def do_nothing():
     """
-    Used on submenus, to get back to main
+    Used on submenus, just to get back to main
     """
     pass
 
@@ -268,9 +294,10 @@ if __name__ == "__main__":
                         3 : options_FirewallProcessing,
                         4 : do_addUser,
                         5 : do_nslookup,
-                        6 : do_whois}
+                        6 : do_whois,
+                        7 : do_reverseLookup}
 
-        user_choice = int(raw_input("\n--MENU--\n 1 - Portscan\n 2 - Connections \n 3 - Firewall Log Processing \n 4 - Add user to DB \n 5 - DNS Lookup \n 6 - WhoIS \n... \n 0 - Exit Program \n\n Choose option number: "))
+        user_choice = int(raw_input("\n--MENU--\n 1 - Portscan\n 2 - Connections \n 3 - Firewall Log Processing \n 4 - Add user to DB \n 5 - DNS Lookup \n 6 - WhoIS \n 7 - Reverse Lookup \n... \n 0 - Exit Program \n\n Choose option number: "))
         print '\n'
 
         menu_options[user_choice]()
