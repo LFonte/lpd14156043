@@ -42,8 +42,6 @@ def login(username, password):
     """
     u = hashlib.md5(str.encode(username)).hexdigest()
     p = hashlib.md5(str.encode(password)).hexdigest()
-    #print u
-    #print p
     con = sqlite3.connect("users.db")
     cursor = con.cursor()
     cursor.execute("SELECT * FROM users WHERE user=? and pass=?", (u,p))

@@ -19,7 +19,7 @@ def plotGraf(strTitlePlot, listNameX, ValueX, inListNameY, ValueY, labelY):
     var inListNameX -  xx's, years
     var inValueX - 0
     var inListNameY - 0
-    var inValueY - yy, number
+    var inValueY - yy, number of students
     var inLabelY - yy's label
     '''
     fig = p.figure()

@@ -240,7 +240,7 @@ def do_reverseLookup():
     
     try:
         print "-Reverse Lookup-\n"
-        address = raw_input("Enter the IP address: ")
+        address = raw_input("Enter the Domain name: ")
         print "\n"
         print socket.gethostbyaddr(address)
         print "\n"
